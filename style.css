@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Bariol";
+  src: url(Bariol_Bold.otf);
+}
+/*
+* {
+  border: 1px dotted red;
+}
+*/
+body {
+  font-family: "Bariol", sans-serif;
+  background-color: rgb(247,248,255);
+  /*color: rgb(123,124,127);*/
+}
+header {
+  text-align: center;
+  height: 80px;
+  visibility: hidden;
+}
+h1 {
+  font-size: 100px;
+  margin-top: 5px;
+}
+h2 {
+  font-size: 70px;
+  margin-top: -80px;
+  line-height: 90%;
+}
+.left {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 60px;
+  max-width: 600px;
+}
+.currently {
+  font-size: 40px;
+}
+.right {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+}
+.face {
+  width: 216px;
+  height: 295px;
+}
+.icon {
+  display: block;
+  max-width: 70px;
+  margin: auto;
+}
+.icon_link{
+  display: inline-block;
+  margin: auto;
+  width: 49%;
+}
+.icon_shell{
+  max-width: 218px;
+  margin-top: 60px;
+}
+hr {
+  width: 70%;
+}
+.footer_shell {
+  max-width: 400px;
+  margin:auto;
+  margin-top: 10px;
+}
+.updates{
+  background-color: rgb(198,199,204);
+  font-size: 40px;
+}
+.lower_text {
+  text-align: center;
+  margin-top: -10px;
+}
+.heading {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
+.name {
+  background-color: rgb(198,199,204);
+  color: rgb(85,93,127);
+}
+a p {
+  text-align: center;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.contact_icon {
+  display: inline-block;
+}
