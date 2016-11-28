@@ -45,9 +45,23 @@ h2 {
   max-width: 600px;
   margin-left: 50px;
 }
+.face_container{
+  width: 220px;
+}
+.face_container:hover{
+  transform: rotate(0deg);
+  -webkit-animation: wiggle 0.5s infinite;
+}
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform:rotate(10deg);}
+  50% {-webkit-transform:rotate(-10deg);}
+  100% {-webkit-transform:rotate(10deg);}
+}
 .face {
   width: 216px;
   height: 295px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .icon {
   display: block;
