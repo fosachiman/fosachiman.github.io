@@ -2,53 +2,93 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-<title>Jason Humphreys</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/css_reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+<title>Jason Humphreys, Full Stack Web Developer</title>
 </head>
 <body>
-  <header><span class="name">Jason Humphreys</span></header>
-<div class="top_container">
-<div class="left">
-<div class="face_container" id="face_cont">
-<img class="face" src="mypixelatedface.png" alt="Jason Humphreys' face">
-</div>
-  <div class="icon_shell">
-    <a class="icon_link" href="https://github.com/fosachiman"><img class="icon" src="GitHub-Mark-120px-plus.png" alt="github link"><p>github</p></a>
-    <a class="icon_link" href="#"><img class="icon" src="folded-paper.jpg" alt="resume link"><p>resume</p></a>
-    </div>
-</div>
-<div class="right">
-  <h1>Hello.</h1>
-  <h2>Welcome to the personal website of <span class="name">Jason Humphreys</span></h2>
-  <p class="currently">I am currently <span class="updates" id="currently"></span></p>
-</div>
-</div>
-</body>
-<hr>
-  <h3 class="heading"><a href="./ga_press_release_homework copy/index.html">GA Press Release</h3>
-    <h3 class="heading"><a href="lifeguard-donkey-32006.bitballoon.com">PacMan Clone</h3>
-  <h3 class="heading"><a href="https://ns-cjuebetxql.now.sh/">Put Me On The List</h3>
-  <h3 class="heading"><a href="./ga_press_release_homework copy/index.html">Atmos</h3>
-  <h3 class="heading"><a href="fosachiman.github.io/formally">Formally</h3>
 
-  <p class="lower_text"><span class="updates" id="projects"></span></p>
-  <hr>
-  <h3 class="heading">Contact Me</h3>
-  <div class="footer_shell">
-  <a class="icon_link" href="mailto:jasonphumphreys@gmail.com"><img class="icon" src="email.png" alt="email me"><p>email</p></a>
-  <a class="icon_link" href="https://www.linkedin.com/in/jason-humphreys-486a0431"><img class="icon" src="linkedin.jpg" alt="linkedin"><p>linkedin</p></a>
+<nav>
+  <h1 class="my-name" id="nav-name">Jason Humphreys</h1>
+  <ul id="menu">
+    <li data-menuanchor="About">
+      <a href="#About" title="About">About</a>
+    </li>
+    <li data-menuanchor="Projects">
+      <a href="#Projects" title="Projects">Projects</a>
+    </li>
+    <li data-menuanchor="Contact">
+      <a href="#Contact" title="Contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="fullpage">
+  <div class="section">
+    <img class="my-face" src="./assets/mypixelatedface.png" alt="Jason's Face">
+    <h1 class="frontpage-name">Jason Humphreys</h1>
+    <p>Full stack web developer based in Brooklyn, NY.</p>
   </div>
-<script src="javascript.js" type="text/javascript" charset="utf-8" async defer></script>
+  <div class="section">
+    <div class="slide formally-page" data-anchor="formally">
+      <h2 class="formally-logo">Formally</h2>
+      <p>A front end framework for creating accessible, responsive form elements</p>
+      <img class="project-image" src="./assets/tuxedo.png" alt="Formally Logo">
+      <div class="link-container">
+        <a class="link" href="https://fosachiman.github.io/formally/" target="_blank">Live Link</a>
+        <a class="link" href="https://github.com/fosachiman/formally" target="_blank">On Github</a>
+      </div>
+    </div>
+    <div class="slide atmos-page" data-anchor="atmos">
+      <img class="atmos-image" src="./assets/atmos.png" alt="Atmos Logo">
+      <p>Location based weather app built in Node/Express utilizing the Dark Skies and Google Locations APIs</p>
+      <img class="project-image" src="./assets/atmos-img.png" alt="Atmos image">
+      <div class="link-container">
+        <a class="link" href="https://aqueous-inlet-15889.herokuapp.com/" target="_blank">Live Link</a>
+        <a class="link" href="https://github.com/fosachiman/atmos" target="_blank">On Github</a>
+      </div>
+    </div>
+    <div class="slide pacman-page" data-anchor="pacman">
+      <h2>A Lot Like PacMan - The Game</h2>
+      <p>Pac-Man clone built using only vanilla JS and HTML/CSS</p>
+      <img class="project-image" src="./assets/pacman.png" alt="Pacman image">
+      <div class="link-container">
+        <a class="link" href="http://lifeguard-donkey-32006.bitballoon.com/" target="_blank">Live Link</a>
+        <a class="link" href="https://github.com/fosachiman/Projectone" target="_blank">On Github</a>
+      </div>
+    </div>
+    <div class="slide pmotl-page" data-anchor="putmeonthelist">
+      <h2 class="pmotl-logo">Put Me On The List</h2>
+      <p>An event RSVP management app built using React JS and Firebase</p>
+      <img class="project-image" src="./assets/party.png" alt="Pacman image">
+      <div class="link-container">
+        <a class="link" href="https://build-lmcggssgcy.now.sh/" target="_blank">Live Link</a>
+        <a class="link" href="https://github.com/fosachiman/putmeonthelist" target="_blank">On Github</a>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <h2 class="contact">jasonphumphreysATgmailDOTcom</h2>
+  </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="./javascripts/jquery.fullpage.min.js"></script>
+<script src="./javascripts/javascript.js" type="text/javascript" charset="utf-8" async defer></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-92817150-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </body>
 </html>
+
