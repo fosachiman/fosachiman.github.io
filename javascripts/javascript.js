@@ -78,9 +78,8 @@ $(document).ready(function() {
 
 window.addEventListener('hashchange', updateMenu, false);
 
-let menu = document.querySelector('#menu');
-
 function updateMenu() {
+  var menu = document.querySelector('#menu');
   if (this.location.hash !== '#Contact' && this.location.hash !== '#About')
     menu.classList.add('onProjects')
   else
