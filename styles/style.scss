@@ -146,8 +146,7 @@ h2 {
   height: 80px;
 }
 .down {
-  border: solid black;
-  border-width: 0 5px 5px 0;
+  border: 0 5px 5px 0 solid black;
   display: inline-block;
   padding: 10px;
   transform: rotate(45deg);
