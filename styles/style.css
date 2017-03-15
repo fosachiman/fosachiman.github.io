@@ -24,7 +24,8 @@ nav {
   margin: 5px;
   color: white;
   font-family: "Cormorant Garamond", serif;
-  font-size: 35px; }
+  font-size: 35px;
+  padding: 10px; }
 
 ul {
   display: flex;
@@ -33,20 +34,31 @@ ul {
   margin: 5px;
   justify-content: flex-end; }
 
+.onProjects li.active {
+  border-bottom: 3px solid white; }
+
+.onProjects li a {
+  color: white;
+  transition: color .2s; }
+
 li {
-  margin-left: 5px;
-  border-radius: 5px;
-  border: 2px solid blue; }
+  margin-right: 15px; }
 
 li.active {
-  background-color: #aabbee; }
+  font-weight: bolder;
+  border-bottom: 3px solid black; }
+
+li:hover {
+  font-weight: bold;
+  border-bottom: 3px solid gray; }
 
 a {
   text-decoration: none;
-  color: blue;
+  color: black;
   display: inline-block;
-  padding: 20px;
-  font-family: "Proza Libre", sans-serif; }
+  padding: 20px 10px 20px 10px;
+  font-family: "Proza Libre", sans-serif;
+  transition: color .2s; }
 
 .frontpage-name {
   text-align: center;
@@ -114,7 +126,8 @@ h2 {
   border-radius: 5px; }
 
 .link:hover {
-  background-color: blue;
+  background-color: white;
+  color: black;
   transition: background-color .75s; }
 
 .contact {
@@ -158,7 +171,7 @@ h2 {
   .my-face {
     width: 116px;
     height: 160px;
-    padding-top: 110px; }
+    padding-top: 160px; }
 
   h2 {
     font-size: 25px;
