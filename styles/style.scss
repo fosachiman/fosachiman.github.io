@@ -145,7 +145,15 @@ h2 {
   width: 80px;
   height: 80px;
 }
-
+.down {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 10px;
+  transform: rotate(45deg);
+  margin-left: calc(50% - 10px);
+  margin-top: 5%;
+}
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
