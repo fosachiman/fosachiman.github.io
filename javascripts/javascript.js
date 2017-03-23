@@ -85,3 +85,13 @@ function updateMenu() {
   else
     menu.classList.remove('onProjects');
 }
+
+let myFace = document.querySelector('.my-face');
+myFace.addEventListener('animationend', preventAnimation, false);
+
+function preventAnimation() {
+  myFace.classList.remove('face-animate')
+  myFace.style.marginLeft = 'auto';
+}
+
+

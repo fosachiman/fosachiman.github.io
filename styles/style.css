@@ -14,8 +14,26 @@ nav {
   height: 239px;
   display: block;
   margin: 0 auto 20px auto;
+  margin-left: -175px;
   padding-top: 100px; }
 
+.face-animate {
+  animation: .75s linear .5s faceFly; }
+
+@keyframes faceFly {
+  from {
+    margin: 0 auto 20px -175px; }
+  25% {
+    transform: rotate(30deg); }
+  50% {
+    transform: rotate(-30deg);
+    margin-left: calc(25% - 88px); }
+  75% {
+    transform: rotate(30deg); }
+  to {
+    margin: 0 auto 20px auto;
+    margin-left: calc(50% - 88px);
+    transform: rotate(0deg); } }
 .my-face:hover {
   transform: rotate(0deg);
   animation: wiggle 0.3s infinite; }
@@ -32,8 +50,14 @@ ul {
   flex: inherit;
   flex-direction: row;
   margin: 5px;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  animation: ease-in .5s appear; }
 
+@keyframes appear {
+  from {
+    margin-top: -100px; }
+  to {
+    margin-top: 0; } }
 .onProjects li.active {
   border-bottom: 3px solid white; }
 
@@ -138,8 +162,7 @@ h2 {
   height: 80px; }
 
 .down {
-  border: solid black;
-  border-width: 0 5px 5px 0;
+  border: 0 5px 5px 0 solid black;
   display: inline-block;
   padding: 10px;
   transform: rotate(45deg);
