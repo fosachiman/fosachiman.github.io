@@ -1,8 +1,12 @@
 
+// @font-face {
+//   font-family: "LeagueSpartan";
+//   src: url('..assets/LeagueSpartan-Bold.otf') format("otf"),
+// }
+
 $headlineFont: 'Cormorant Garamond', serif;
 $secondaryFont: 'Proza Libre', sans-serif;
 $pmotlFont: 'Righteous', cursive;
-$formallyFont: 'Playfair Display', serif;
 
 nav {
   z-index: 100;
@@ -130,12 +134,19 @@ h2 {
   margin: 0 auto;
   margin-top: 20px;
 }
-.formally-logo {
-  font-family: $formallyFont;
+.dwd-image {
+  max-width: 800px;
+  min-width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }
-.formally-page {
-  background-color: gray;
-  color: white;
+.dwd-logo {
+  font-family: $secondaryFont;
+}
+.dwd-page {
+  background-color: #fdb02e;
+  color: black;
 }
 .atmos-image {
   width: 320px;

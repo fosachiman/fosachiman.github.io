@@ -108,12 +108,19 @@ h2 {
   margin: 0 auto;
   margin-top: 20px; }
 
-.formally-logo {
-  font-family: "Playfair Display", serif; }
+.dwd-image {
+  max-width: 800px;
+  min-width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; }
 
-.formally-page {
-  background-color: gray;
-  color: white; }
+.dwd-logo {
+  font-family: "Proza Libre", sans-serif; }
+
+.dwd-page {
+  background-color: #fdb02e;
+  color: black; }
 
 .atmos-image {
   width: 320px;
